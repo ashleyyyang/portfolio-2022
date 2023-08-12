@@ -1,0 +1,700 @@
+/* TEXT */
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-Bold.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-BoldItalic.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-Book.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-BookItalic.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-BookItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-Dante.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-Dante.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-DanteItalic.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-DanteItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-Normal.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-NormalItalic.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-NormalItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-Thin.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-ThinItalic.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-UltraLight.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Inferi';
+    src: url('https://ashyang.com/Inferi/Inferi-UltraLightItalic.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-UltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+
+
+/* VARIABLES */
+:root {
+  --arena: #fff; /* #eff4fd */
+  --laguna: #181e53;
+  --espuma: #F1F2F5; /* #fff */
+  --almeja: #e89d59;
+  --laguna-light: #6b6f98;
+}
+
+
+/* GENERAL */
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--arena);
+  color: var(--laguna);
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: wrap;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+
+  /* font-family: "Karla", sans-serif; */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Small devices (landscape phones, 544px and up -> but i changed it to 350px for portrait phones) */
+@media (min-width: 350px) {
+    /*h1 {font-size:1.5rem;}*/ /*1rem = 16px*/
+  h1 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 2.7rem;
+    /* 2.4rem */
+  }
+
+  h1 a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+  }
+
+  h1 a:hover {
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h2 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.7rem;
+  }
+
+  .about h2 {
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 1.7rem;
+  }
+
+  .about h2 a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+
+  }
+
+  .about h2 a:hover {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h3 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: normal;
+    font-style: normal, italic;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+  }
+
+  /* INDEX CARD TEXT PADDING */
+  .card-text {
+      padding: 20px;
+  }
+
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    /*h1 {font-size:2rem;}*/ /*1rem = 16px*/
+
+  h1 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 3.0rem;
+    /* 2.4rem */
+  }
+
+  h1 a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+  }
+
+  h1 a:hover {
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h2 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.8rem;
+  }
+
+  .about h2 {
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 1.8rem;
+  }
+
+  .about h2 a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+
+  }
+
+  .about h2 a:hover {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h3 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: normal;
+    font-style: normal, italic;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+
+  /* INDEX CARD TEXT PADDING */
+  .card-text {
+      padding: 40px 20px;
+  }
+}
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /*h1 {font-size:2.5rem;}*/ /*1rem = 16px*/
+  h1 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 3.5rem;
+    /* 2.4rem */
+  }
+
+  h1 a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+  }
+
+  h1 a:hover {
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h2 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 2.3rem;
+  }
+
+  .about h2 {
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 2.3rem;
+  }
+
+  .about h2 a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+
+  }
+
+  .about h2 a:hover {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h3 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: normal;
+    font-style: normal, italic;
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+/* LINKS */
+
+a {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--laguna-light);
+  color: var(--laguna-light);
+}
+
+a:hover {
+  color: var(--laguna);
+  text-decoration-color: var(--laguna);
+}
+
+/* BUTTON */
+
+.button {
+  background-color: var(--laguna);
+  border: 2px solid var(--arena);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--arena);
+}
+
+.button:hover {
+  background-color: var(--arena);
+  border: 2px solid var(--laguna);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--laguna);
+}
+
+/* HIGHLIGHT */
+::-moz-selection {
+  color: var(--arena);
+  background: var(--laguna);
+}
+::selection {
+  color: var(--arena);
+  background: var(--laguna);
+}
+
+/* HEADER BAR */
+.header-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-bar a {
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+.header-bar a:hover {
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+/* INTRO */
+
+.intro {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* CARDS */
+
+.project {
+  background-color: none;
+  margin-bottom: 40px;
+  border-radius: 10px;
+
+  /* border: 1px solid var(--laguna);
+  border-top: 0px; */
+}
+
+.project a {
+  background-color: none;
+  opacity: 1;
+  font-style: normal !important;
+  text-decoration: none !important;
+  color: var(--laguna);
+}
+
+.project:hover {
+  background-color: var(--espuma);
+  color: var(--arena);
+}
+
+.project a:hover {
+  /*background-color: var(--laguna);
+  color: var(--arena);*/
+
+  font-style: normal !important;
+  text-decoration: none !important;
+}
+
+.project-inc {
+  background-color: none;
+  /* opacity: 0.6; */
+
+  font-style: normal !important;
+  text-decoration: none !important;
+}
+
+.project-inc a {
+  background-color: none;
+
+  font-style: normal !important;
+  text-decoration: none !important;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+}
+
+/* IMAGES */
+img {
+  display: block;
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  /* background-color: bisque; */
+}
+
+/* BLOCKQUOTES */
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 50px;
+}
+
+blockquote {
+  background: white;
+  padding: 20px 30px 20px 30px;
+  margin: 50px auto;
+  width: 100%; /* 80% */
+  max-width: 800px;
+}
+
+.stacked {
+  border: solid 2px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 var(--laguna),
+    15px 11px 0 0 var(--laguna), 11px 15px 0 0 var(--laguna);
+}
+
+.shadow-quote {
+  border: solid 2px;
+  box-shadow: 15px 15px 0 0 var(--laguna);
+}
+
+.rule {
+  position: relative;
+  left: 7px;
+  background: lighten(var(--laguna), 40%);
+  box-shadow: -2px 0 0 var(--laguna), -4px 0 0 lighten(var(--laguna), 40%),
+    -7px 0 0 var(--laguna);
+}
+
+/* ACCORDIONS */
+/* Accordion button */
+.accordion {
+  background-color: var(--laguna);
+  color: var(--arena);
+  /* cursor: pointer; */
+  padding: 18px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Accordion hover */
+.active,
+.accordion:hover {
+  background-color: var(--laguna-light);
+}
+
+/* Accordion panel */
+.panel {
+  padding: 18px 0px 0px 0px;
+  background-color: none;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-in;
+}
+
+/* Blank */
+.blank {
+  background-color: none;
+}
+
+/* Footer */
+.footer {
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
+/* CURSOR */
+
+/* doggie: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani),
+  url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), */
+
+/* a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-7/oth670.cur), pointer, auto !important;} */
+
+
+a:hover {
+  /* emoji: https://www.emojicursor.app/ */
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='44' height='53' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+
+  /* rainbow lucky charm marshmallow */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-6/foo515.cur), auto !important; */
+
+  /* sprite */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-7/foo634.cur), auto !important; */
+
+  /* pee nut butt or */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-7/foo643.cur), auto !important;  */
+
+  /* ketchup */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-7/foo637.cur), auto !important; */
+
+  /* doggie */
+  /* cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important; */
+}
